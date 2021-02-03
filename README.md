@@ -2,6 +2,9 @@
 
 React JS Fundamentals Course (2021Updates!)
 
+# 210203
+오늘은 많은 이야기를 했다..
+
 # 210202
 ```
 const foodILike = [
