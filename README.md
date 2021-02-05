@@ -2,6 +2,48 @@
 
 React JS Fundamentals Course (2021Updates!)
 
+# 210205
+
+ - constructor > render(react) 순서 > componentDidMount 
+conponent가 mount될 떄 component가 screen에 표시될 때 component가 website에 갈 때 
+ > constructor 호출
+
+ - mount
+react에서 컴포넌트를 특정 영역에 끼워넣는 행위
+ReactDOM.render 함수를 통해 DOM의 특정 영역에 component를 넣는 것
+
+ - render > componentDidUpdate
+컴포넌트가 Update(변화)할 떄
+
+ - componentWillUnmount
+컴포넌트가 DOM 상에서 제거될 떄
+# 210204
+
+ - react 화살표 함수(=>)
+bind()함수는 전달된 인자를 this 로 보내는 바인딩 함수를 만듭니다. 
+this 는 다른 언어와 달리 실행 문맥(context)에 따라 변합니다. 
+React 에서 이벤트 핸들러 함수를 바인드할때 화살표 함수를 사용합니다.
+
+```
+  state = {
+    count:0
+  };
+  add = () => {
+    this.setState(current => ({count: current.count+ 1}));
+  };
+  minus = () => {
+    this.setState(current => ({count: current.count-1}));
+  };
+  render(){
+    return (
+      <div>
+        <h1>number : {this.state.count}</h1>
+        <button onClick={this.add}>Add</button>
+        <button onClick={this.minus}>Minus</button>
+      </div>
+    );
+```
+
 # 210203
 오늘은 많은 이야기를 했다..
 
