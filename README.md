@@ -2,6 +2,25 @@
 
 React JS Fundamentals Course (2021Updates!)
 
+# 210208
+ - axios
+npm i axios (axois 다운로드받고 연결해야됨)
+Axios는 브라우저, Node.js를 위한 Promise API를 활용하는 HTTP 비동기 통신 라이브러리입니다.
+
+ - async
+비동기(너는 이걸 기다려야 해)
+ - await
+axios가 종료할 때까지 기다렸다가 시작
+
+```
+ getMovies = async () => {
+    const movies = await axios.get("https://yts-proxy.now.sh/list_movies.json");
+  };
+  componentDidMount(){
+    this.getMovies();
+  };
+```
+axios.get은 완료 시간이 필요하기에 await 사용
 # 210205
 
  - constructor > render(react) 순서 > componentDidMount 
